@@ -1,7 +1,7 @@
 var mysql = require('./config/database');
 
 
-    $query = 'SELECT * FROM test;';
+    $query = 'SELECT * FROM user;';
     mysql.query($query, function(err, rows, fields) {
         if(err){
             console.log("An error ocurred performing the query."+ err);
