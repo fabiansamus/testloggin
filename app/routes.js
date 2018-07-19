@@ -23,7 +23,7 @@ module.exports = function(app, passport) {
 
     // =====================================
     // SIGNUP ==============================
-    // =====================================
+    // ===================================== 
     // show the signup form
     app.get('/signup', function(req, res) {
 
