@@ -1,0 +1,73 @@
+/*
+*** @_DASBOARD-CONTAINER
+**** this file contains all the needed classes for the dashboard
+*****
+*/
+/*
+* # dashboard-view-wrapper
+* this class wrap all the child containers inside of it
+*/
+.dashboard-view-wrapper {
+    width  : 100vw;
+    height : auto;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    position  : relative;
+    overflow-y: auto;
+}
+
+/*
+* # dashboard-view-section-content--panel
+* this class contains all the given views to display from the navigation menu
+*/
+.dashboard-view-section-content--panel {
+    width: 100%;
+    height    : calc(100vh - 64px);
+    background: transparent;
+    position  : relative;
+}
+
+/*
+* # dashboard-item-register-window
+* this class wrap the forms for the registration of the items in the platform
+*/
+.dashboard-item-register-window {
+    width  : 90%;
+    max-width: 783px;
+    height : auto;
+    margin : 48px auto;
+    padding: 32px 16px;
+    border-radius: 2px;
+    background: map-get($color-palette, light-grey-color);
+    box-shadow: map-get($box-shadows, box-shadow-4);
+}
+
+/*
+* # dashboard-action-window--panel
+* this class contains and wrap the timeline information about the activity in the current session
+***/
+.dashboard-action-window--panel {
+    width: 250px;
+    height: calc(100vh - (64px + 54px));
+    position: relative;
+}
+
+.app--dashboard-footer-taskbar-panel {
+    width: 100%;
+    height: 54px;
+    background: map-get($color-palette, light-color);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #ddd;
+}
+
+
+.dashboard-view-joint {
+    width: calc(100vw - 250px);
+    height: calc(100vh - (54px + 64px));
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+}

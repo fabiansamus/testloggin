@@ -1,0 +1,12 @@
+#app--dashboard {
+    position  : relative;
+    top : 0;
+    left: 0;
+    width : 100vw;
+    height: auto;
+    background: transparent;
+}
+
+@import "dashboard-navigation";
+@import "dashboard-header";
+@import "dashboard-container";

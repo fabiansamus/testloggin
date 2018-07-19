@@ -1,0 +1,79 @@
+$form-width: (
+    screen-1366: 620px
+);
+
+$form-background-colors: (
+    light: #fff,
+    dark : #343434
+);
+
+.form-header--hfgX {
+    width: 100%;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #2e3d49;
+    text-align: center;
+}
+
+.simple-form--panel {
+    margin : 64px auto;
+    width  : map-get($form-width, screen-1366);
+    height : auto;
+    background-color: map-get($form-background-colors, light);
+    box-shadow      : map-get($box-shadows, box-shadow-5);
+    border-radius: 3px;
+    border: 1px solid #ddd;
+
+    #section-access-header-panel {
+        width : inherit;
+        height: 64px;
+        border-bottom: 1px solid #ddd;
+
+        ul {
+            width: 100%;
+            height: inherit;
+            background-color: transparent;
+            vertical-align: baseline;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+
+            li {
+                width: 50%;
+                height: inherit;
+                line-height: 64px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                display: inline-block;
+                color: #7d97ad;
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    width: 1px;
+                    height: 64px;
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+
+    #form-login--panel, #form-signup--panel {
+        padding: 64px 32px;
+        margin : 0 auto;
+        width  : 90%;
+        height : auto;
+    }
+}

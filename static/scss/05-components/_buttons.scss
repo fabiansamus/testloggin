@@ -1,0 +1,42 @@
+.btn {
+    padding: 0 16px;
+    height: 36px;
+    background: linear-gradient(to left, #00ae14, #007b0e);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(to left, #00ae14, #00620b);
+        transition: all .15s ease-in-out;
+    }
+
+}
+
+.primary--btn {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to left, #00ae14, #00620b);
+    transition: all .15s ease-in-out;
+}
+
+.form--btn {
+    padding: 0 64px;
+    height: 44px;
+    background: linear-gradient(to left, map-get($color-palette, base-color), darken(map-get($color-palette, base-color), 5%));
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.15);
+}

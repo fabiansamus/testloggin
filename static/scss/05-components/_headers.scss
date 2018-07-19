@@ -1,0 +1,23 @@
+#header--panel {
+    width     : 100%;
+    min-height: 84px;
+    background: map-get($color-palette, light-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    box-shadow: map-get($box-shadows, box-shadow-4);
+    z-index: 95;
+
+    .page-isotype {
+        height: 54px;
+        padding: 5px;
+
+        img {
+            width: 70px;
+        }
+    }
+}

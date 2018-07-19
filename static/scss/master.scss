@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+:root {
+    --background-color: #f0f0f0;
+}
+
+html {
+    font: 500 13px/150% "Open Sans", sans-serif;
+    font-smoothing: antialiased;
+}
+
+body {
+    margin: 0; padding: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@import "00-base/base";
+@import "04-forms/forms";
+@import "05-components/buttons";
+@import "05-components/headers";
+@import "05-components/notifications";
+@import "07-dashboards/dashboard-index";
+@import "10-mediascreen/mediascreen";
+
+@media screen and ( max-width: 720px ) {
+    #access-session-panel {
+        margin: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+@media screen and ( max-width: 1024px ) {
+    .dashboard-item-register-window {
+        width: 100%;
+        height: calc(100vh - (64px + 54px));
+    }
+
+}
+
+@media screen and ( max-width: 650px ) {
+    .dashboard-account-options-tab--panel  {
+        width: 36px;
+    }
+    .dashboard-account-options-tab--panel span {
+        display: none;
+    }
+
+    .dashboard-action-tool--panel {
+        width: auto;
+    }
+
+    .dashboard-view-joint {
+        width: 100vw;
+    }
+
+    .dashboard-view-section-content--panel {
+        width: 100vw;
+    }
+
+    .page-isotype {
+        left: 0;
+        position: relative;
+    }
+
+    .dashboard-navigation--tX01 {
+        height: 100vh;
+        left: -260px;
+        position: fixed;
+        background: map-get($color-palette, light-color);
+        z-index: 98
+    }
+
+    .dashboard-item-register-window {
+        width: 100%;
+        height: calc(100vh - (64px + 54px));
+        margin: 0;
+        padding: 48px 32px;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .dashboard-action-window--panel {
+        display: none;
+    }
+
+    .double {
+        grid-template-rows: auto auto;
+    }
+}

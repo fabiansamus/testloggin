@@ -1,0 +1,192 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .09s ease-in-out;
+  -o-transition: all .09s ease-in-out;
+  transition: all .09s ease-in-out; }
+
+.blur-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(1, 22, 39, 0.8); }
+
+.def-siz {
+  width: 1200px;
+  padding: 0 16px;
+  height: auto;
+  position: relative;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  height: 64px;
+  background: transparent;
+  position: absolute;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header ul .st-access button {
+      height: 36px;
+      padding: 0 16px;
+      background: none;
+      color: #ebcb6a;
+      border: 1px solid #ebcb6a;
+      margin-left: 8px;
+      border-radius: 28px;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: 0; }
+      header ul .st-access button:hover {
+        background: #ebcb6a;
+        color: #1b1f26; }
+  header h2 {
+    color: #ebcb6a;
+    font-family: 'Share Tech', sans-serif;
+    margin: 0;
+    padding: 0; }
+
+/**
+*/
+html {
+  font: 500 14px/150% "Open Sans", sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; }
+
+#presentation {
+  width: 100%;
+  height: 70vh;
+  background-image: url("trading.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  #presentation .pre-visualization {
+    min-width: 360px;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #presentation .pre-visualization .tag {
+      padding: 0;
+      font-size: 58px;
+      font-family: 'Share Tech', sans-serif;
+      color: #ebcb6a;
+      letter-spacing: .5px; }
+    #presentation .pre-visualization p {
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: .8px; }
+    #presentation .pre-visualization .double-toggle {
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 49% 49%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #presentation .pre-visualization .double-toggle button {
+        height: 64px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 28px;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer; }
+        #presentation .pre-visualization .double-toggle button:hover {
+          background: #1A659E;
+          border: 1px solid #1A659E; }
+
+.crypto-broadcast-tv-coin-panel {
+  background: #011627;
+  width: 100%;
+  min-height: 100px;
+  z-index: 20; }
+
+.security-alert-black-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: none; }
+  .security-alert-black-screen .security-alert {
+    border-radius: 4px;
+    width: 400px;
+    height: auto;
+    max-height: 328px;
+    padding: 16px;
+    background: #fff;
+    position: absolute;
+    top: calc(50% - 164px);
+    left: calc(50% - 200px); }
+    .security-alert-black-screen .security-alert img {
+      margin: 0 auto; }
+    .security-alert-black-screen .security-alert a {
+      padding: 8px 14px;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      color: green; }
+    .security-alert-black-screen .security-alert button {
+      width: 100%;
+      height: 44px;
+      background: #1b1f26;
+      color: #f0f0f0;
+      border-radius: 4px;
+      font-size: 1.3rem;
+      border: none;
+      outline: none;
+      cursor: pointer; }
+
+
+.site-information {
+}
+
+.zoom-in {
+  -webkit-animation: zoomIn .3s ease-in-out;
+  animation: zoomIn .3s ease-in-out; }
+
+@-webkit-keyframes zoomIn {
+  from {
+    -webkit-transform: scale(-2);
+    transform: scale(-2);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    -webkit-transform: scale(-2);
+    transform: scale(-2);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
