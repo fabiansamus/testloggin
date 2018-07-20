@@ -3,11 +3,29 @@ var mysql = require('./config/database');
 
 // query para buscar el password basado en email
 // mysql = "SELECT password FROM USER WHERE email = "+req.body.password+";";
-user = function(email){
+
+function queryadd(params) {
+    mysql.query(params,function(err, rows, fields){
+        if (err) {
+            console.log("An error ocurred performing the query."+ err);
+            return;
+        }console.log("Query succesfully executed: ");
+    });
+    mysql.end(function(){
+        // The connection has been closed
+    });
+}
+
+useradd =  function (params) {
+    $query = "INSERT INTO users()VALUES("+params+"); ";
+    return queryadd($query);
+
+}
+
+
+userlog = function(email,pass){
     $query = "SELECT user_pass FROM users WHERE email = '"+email+"';";
-    mysql.query($query, function(err, rows, fields){
-        return rows[0].use_pass;
-    }
+    return queryadd($query);
 }
 // create the model for users and expose it to our app
 encrypt = function(password) {

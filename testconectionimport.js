@@ -1,5 +1,6 @@
 var mysql    = require('./config/database');
 var bcrypt   = require('bcrypt-nodejs');
+var users    = require('./app/models/user');
 
 
 
