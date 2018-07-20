@@ -1,6 +1,14 @@
 var mysql = require('./config/database');
+var bcrypt   = require('bcrypt-nodejs');
 
-    $query = 'SELECT * FROM users ;';
+
+    var password = bcrypt.hashSync('prueba_de_acceso');
+    console.log(password);
+    var pass = bcrypt.compareSync('prueba_de_acceso','$2a$10$OCxoNR96LiWTARZP1TlSmeEYs/4Dpj8dFB/KuZH6OxEqr0iSY1MoO');
+    console.log(pass);
+    
+    $query = "SELECT * FROM users WHERE user_pass = '$2a$10$OCxoNR96LiWTARZP1TlSmeEYs/4Dpj8dFB/KuZH6OxEqr0iSY1MoO';";
+    // $query = "INSERT INTO users(user_name, user_email, user_pass) VALUES ('samus54', 'samus226@hotmail.com', '"+password+"');";
     mysql.query($query, function(err, rows, fields) {
         if(err){
             console.log("An error ocurred performing the query."+ err);
