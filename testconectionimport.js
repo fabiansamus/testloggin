@@ -15,7 +15,7 @@ var bcrypt   = require('bcrypt-nodejs');
             return;
         }
   
-        console.log("Query succesfully executed: ", rows);
+        console.log("Query succesfully executed: ", rows[0].user_id);
     });
     mysql.end(function(){
         // The connection has been closed

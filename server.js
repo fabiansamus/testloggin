@@ -43,5 +43,5 @@ require('./app/routes.js')(app, passport); // load our routes and pass in our ap
 
 // launch ======================================================================
 app.listen(port);
-console.log('Redirect on Port on The Browser ' + port);
+console.log('Browser type: localhost:' + port);
 
