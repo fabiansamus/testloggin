@@ -8,6 +8,7 @@ encrypt = function(password) {
 
 // checking if password is valid
 validPassword = function(password) {
+                            // pass without hash and databse password already hash
     return bcrypt.compareSync(password, this.local.password);
 };
 
