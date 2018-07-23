@@ -21,8 +21,6 @@ useradd =  function (params) {
     return queryadd($query);
 
 }
-
-
 userlog = function(email,pass){
     $query = "SELECT user_pass FROM users WHERE email = '"+email+"';";
     return queryadd($query);
