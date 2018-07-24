@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : '',
-    database : 'dblogin'
+    database : 'cripto_prestige'
 });
 // connect to mysql
 connection.connect(function(err) {
